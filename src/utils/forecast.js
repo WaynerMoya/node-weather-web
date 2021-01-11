@@ -10,6 +10,8 @@ forecast=(addres , callback)=>{
         }else if(body.error){
             callback("Unable to find location" , undefined)
         }else{
+            
+
             callback(undefined , {
                 weather_descriptions : body.current.weather_descriptions[0],
                 temperature : body.current.temperature,
